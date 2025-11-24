@@ -3,6 +3,8 @@
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Student List</h2>
+    <button class = "btn btn-primary"><a href=./add-student.php class="text-light">
+    add student</a></button>
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -48,4 +50,3 @@
   }
   
   ?>
-    

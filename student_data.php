@@ -17,7 +17,7 @@ $res =msqli_query($conn, $query);
 
 if($res)
 {
-    header("location:./index.php");
+    header("location:./admin.php");
 }
 else{
     echo "not register";

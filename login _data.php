@@ -18,12 +18,16 @@ if(isset($_POST['login'])){
         if($row > 0){
         $_SESSION['email'] = $email;
         echo "query succesfully run";
-        header("location:./index.php");
+        while($row = mysqli_fetch_assoc($res))
+        header("location:./admin.php");
         }
-
+     elseif ($row['user_role'] =="faculty") {
+        header("location:./faculty.php");
+}
         else{
-            echo "query is not run";
-            header("location:./register.php");
+            // echo "query is not run";
+            // header("location:./register.php");
+            header("location:./student.php");
         }
         
     }
